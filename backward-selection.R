@@ -13,7 +13,7 @@ require(lmtest)
 vif(explicativas)
 
 # Complete model with all variables
-model<-lm(HSM~VHF+VHM+VVI+VVM+AHM+AVI+AVM+VAQ+VAJ+VAT+VAO+AFMQ+AFMJ+ADFMT+ACG+AO)
+modelo<-lm(HSM~VHF+VHM+VVI+VVM+AHM+AVI+AVM+VAQ+VAJ+VAT+VAO+AFMQ+AFMJ+ADFMT+ACG+AO)
 
 # Final model selected by the backward method without the intercept
 modelo<-lm(HSM~VHF+VVI+AVI-1)
